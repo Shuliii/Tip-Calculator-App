@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tip Calculator App</title>
+    <link rel="icon" type="image/x-icon" href="./images/favicon-32x32.png" />
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+  </head>
+  <body>
+    <main class="wrapper">
+      <header>
+        <a href="#"><img src="./images/logo.svg" /></a>
+      </header>
+
+      <section>
+        <div class="left">
+          <div class="first">
+            <label for="bill">Bill</label>
+            <input
+              class="billamount"
+              type="text"
+              placeholder="142.55"
+              id="bill"
+              name="bill"
+            />
+          </div>
+          <div class="second">
+            <p>Select Tip %</p>
+            <div class="button-holder">
+              <button class="button">5%</button>
+              <button class="button">10%</button>
+              <button class="button">15%</button>
+              <button class="button">25%</button>
+              <button class="button">50%</button>
+              <input type="text" palceholder="Custom" />
+            </div>
+          </div>
+
+          <div class="third">
+            <label>Number of People</label>
+            <input type="text" placeholder="5" class="people" />
+          </div>
+        </div>
+
+        <div class="right">
+          <div class="TipAmount">
+            <div class="TipAmount-holder">
+              <h3>Tip Amount</h3>
+              <p>/ person</p>
+            </div>
+            <div class="TipAmount-amount">
+              <h2>$4.27</h2>
+            </div>
+          </div>
+          <div class="Total">
+            <div class="Total-holder">
+              <h3>Total</h3>
+              <p>/ person</p>
+            </div>
+            <div class="Total-amount">
+              <h2>$32.79</h2>
+            </div>
+          </div>
+          <button class="reset">RESET</button>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

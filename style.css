@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Space+Mono:wght@700&display=swap");
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font: inherit;
+}
+
+body {
+  background: hsl(185, 41%, 84%);
+  display: grid;
+  place-content: center;
+  height: 100vh;
+  font-family: "Space Mono";
+  position: relative;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+}
+
+section {
+  background: white;
+  width: 920px;
+  height: 481px;
+  box-shadow: 0px 32px 43px rgba(79, 166, 175, 0.200735);
+  border-radius: 25px;
+  margin-top: 87.86px;
+  display: flex;
+  flex: 1;
+  align-items: center;
+  gap: 3rem;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  width: 379px;
+  height: 388px;
+  margin-block: 45px 48px;
+  margin-left: 48px;
+  font-size: 16px;
+  line-height: 24px;
+
+  color: #5e7a7d;
+}
+
+.billamount {
+  margin-top: 6px;
+  background: #f3f9fa url("./images/icon-dollar.svg") no-repeat;
+  background-position: 16px 17px;
+}
+
+.second {
+  margin-top: 40px;
+  width: 379px;
+  height: 152px;
+}
+
+.button-holder {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 16px 14px;
+  margin-top: 16px;
+}
+
+.button {
+  color: white;
+  background: hsl(183, 100%, 15%);
+  font-size: 24px;
+  line-height: 36px;
+
+  text-align: center;
+  padding-block: 6px;
+  padding-inline: 13px 14px;
+  border-radius: 5px;
+  border: none;
+}
+
+.third {
+  margin-top: 40px;
+}
+
+input {
+  display: block;
+  width: 100%;
+  background: #f3f9fa;
+  border-radius: 5px;
+  border: none;
+  line-height: 36px;
+  padding-block: 6px;
+  text-align: right;
+}
+
+.people {
+  margin-top: 6px;
+}
+
+.right {
+  background: hsl(183, 100%, 15%);
+  width: 413px;
+  height: 417px;
+  /* margin: 2rem; */
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  padding: 2.5rem;
+}
+
+.right h3 {
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+}
+
+.right p {
+  font-size: 13px;
+  line-height: 19px;
+
+  color: #7f9d9f;
+}
+
+.right h2 {
+  font-size: 48px;
+  line-height: 71px;
+
+  text-align: right;
+  letter-spacing: -1px;
+
+  color: #26c2ae;
+}
+
+.TipAmount {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.reset {
+  margin-top: auto;
+}
