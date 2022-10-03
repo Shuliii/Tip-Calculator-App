@@ -13,6 +13,213 @@ body {
   background: hsl(185, 41%, 84%);
   display: grid;
   place-content: center;
+  min-height: 100vh;
+  font-family: "Space Mono";
+  margin: auto;
+}
+
+.wrapper {
+  max-width: 920px;
+}
+
+header {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 87.86px;
+}
+
+section {
+  background: white;
+  box-shadow: 0px 32px 43px rgba(79, 166, 175, 0.200735);
+  border-radius: 25px;
+  display: flex;
+}
+
+.left {
+  margin-block: 2.8125rem 3rem;
+  margin-inline: 3rem 3rem;
+  max-width: 379px;
+}
+
+.bill-place-holder {
+  margin-block: 0 2.5rem;
+}
+
+.billamount {
+  margin-top: 0.375rem;
+  background: #f3f9fa url("./images/icon-dollar.svg") no-repeat;
+  background-position: top 16.87px left 19.26px;
+}
+
+.tip-place-holder {
+  margin-block: 0 2.5rem;
+}
+
+.button-holder {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 16px 14px;
+  margin-top: 16px;
+}
+
+.button {
+  color: white;
+  background: hsl(183, 100%, 15%);
+  font-size: 24px;
+  line-height: 36px;
+
+  text-align: center;
+  padding-block: 0.375rem;
+  padding-inline: 13px 14px;
+  border-radius: 5px;
+  border: none;
+}
+
+.people {
+  margin-top: 0.375rem;
+  background: #f3f9fa url("./images/icon-person.svg") no-repeat;
+  background-position: top 1rem left 17px;
+}
+
+.billamount,
+.people {
+  text-align: right;
+  padding-inline: 0 17px;
+}
+
+.tip {
+  text-align: center;
+}
+
+input {
+  display: block;
+  width: 100%;
+  background: #f3f9fa;
+  border-radius: 5px;
+  border: none;
+  padding-block: 0.375rem;
+  font-size: 24px;
+  line-height: 36px;
+  font-weight: 700;
+}
+
+.tip-place-holder > p {
+  margin-bottom: 1rem;
+}
+
+label,
+.tip-place-holder > p {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  color: #5e7a7d;
+}
+
+.right {
+  margin-block: 2rem;
+  margin-inline: 0 2rem;
+  width: 413px;
+  background: hsl(183, 100%, 15%);
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  padding: 2.5rem;
+}
+
+.TipAmount,
+.Total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.TipAmount {
+  margin-block: 0 1.5625rem;
+}
+
+.right h3 {
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+}
+
+.right p {
+  font-size: 13px;
+  line-height: 19px;
+  color: #7f9d9f;
+}
+
+.right h2 {
+  font-size: 48px;
+  line-height: 71px;
+  text-align: right;
+  letter-spacing: -1px;
+  color: #26c2ae;
+}
+
+.reset {
+  margin-top: auto;
+  padding-block: 0.5625rem;
+  padding-inline: 37px 2.5rem;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  background: #26c2ae;
+  border-radius: 5px;
+  border: none;
+
+  text-align: center;
+
+  color: #00474b;
+}
+
+@media (max-width: 920px) {
+  .wrapper {
+    max-width: 375px;
+  }
+
+  header {
+    margin-top: 50px;
+  }
+
+  section {
+    flex-direction: column;
+  }
+
+  .left {
+    margin: 2rem;
+  }
+
+  .right {
+    width: 327px;
+    margin-bottom: 2rem;
+    margin-inline: 24px;
+    padding: 37px 22px 24px 24px;
+  }
+
+  .right h2 {
+    font-size: 32px;
+    line-height: 47px;
+    text-align: right;
+    letter-spacing: -0.666667px;
+    color: #26c2ae;
+  }
+
+  .TipAmount {
+    margin-block: 0 20px;
+  }
+
+  .reset {
+    margin-top: 2rem;
+  }
+}
+
+/* body {
+  background: hsl(185, 41%, 84%);
+  display: grid;
+  place-content: center;
   height: 100vh;
   font-family: "Space Mono";
   position: relative;
@@ -54,7 +261,7 @@ section {
 .billamount {
   margin-top: 6px;
   background: #f3f9fa url("./images/icon-dollar.svg") no-repeat;
-  background-position: 16px 17px;
+  background-position: top 16.87px left 19.26px;
 }
 
 .second {
@@ -106,7 +313,6 @@ input {
   background: hsl(183, 100%, 15%);
   width: 413px;
   height: 417px;
-  /* margin: 2rem; */
   border-radius: 15px;
   display: flex;
   flex-direction: column;
@@ -150,4 +356,4 @@ input {
 
 .reset {
   margin-top: auto;
-}
+} */
