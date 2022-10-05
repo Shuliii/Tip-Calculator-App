@@ -1,5 +1,6 @@
 const bill = document.querySelector('.billamount');
 const people = document.querySelector('.people');
+const error = document.querySelector('.error');
 const five = document.querySelector('.five');
 const ten = document.querySelector('.ten');
 const fifteen = document.querySelector('.fifteen');
@@ -18,8 +19,19 @@ function calcTip (y, x) {
     return y / x;
 }
 
+function checkPeople () {
+    if (people.value <= 0) {
+        error.classList.add('visible')
+        people.classList.add('red')
+        return false;
+    } else {
+        error.classList.contains('visible') && error.classList.toggle('visible');
+        people.classList.contains('red') && people.classList.toggle('red');
+    }
+}
+
 five.addEventListener('click', () => {
-    if (people.value <= 0) return;
+    if (checkPeople() == false) return;
     const Total = calcTotal(bill.value, 5).toFixed(2);
     const Tip = calcTip(Total, people.value).toFixed(2);
     insertTotal.innerHTML = "$"+Total
@@ -27,7 +39,7 @@ five.addEventListener('click', () => {
 })
 
 ten.addEventListener('click', () => {
-    if (people.value <= 0) return;
+    if (checkPeople() == false) return;
     const Total = calcTotal(bill.value, 10).toFixed(2);
     const Tip = calcTip(Total, people.value).toFixed(2);
     insertTotal.innerHTML = "$"+Total
@@ -35,7 +47,7 @@ ten.addEventListener('click', () => {
 })
 
 fifteen.addEventListener('click', () => {
-    if (people.value <= 0) return;
+    if (checkPeople() == false) return;
     const Total = calcTotal(bill.value, 15).toFixed(2);
     const Tip = calcTip(Total, people.value).toFixed(2);
     insertTotal.innerHTML = "$"+Total
@@ -43,7 +55,7 @@ fifteen.addEventListener('click', () => {
 })
 
 twentyfive.addEventListener('click', () => {
-    if (people.value <= 0) return;
+    if (checkPeople() == false) return;
     const Total = calcTotal(bill.value, 25).toFixed(2);
     const Tip = calcTip(Total, people.value).toFixed(2);
     insertTotal.innerHTML = "$"+Total
@@ -51,7 +63,7 @@ twentyfive.addEventListener('click', () => {
 })
 
 fifty.addEventListener('click', () => {
-    if (people.value <= 0) return;
+    if (checkPeople() == false) return;
     const Total = calcTotal(bill.value, 50).toFixed(2);
     const Tip = calcTip(Total, people.value).toFixed(2);
     insertTotal.innerHTML = "$"+Total
@@ -63,7 +75,7 @@ reset.addEventListener('click', () => {
 })
 
 tip.addEventListener('input', () => {
-    if (people.value <= 0) return;
+    if (checkPeople() == false) return;
     const Total = calcTotal(bill.value, tip.value).toFixed(2);
     const Tip = calcTip(Total, people.value).toFixed(2);
     insertTotal.innerHTML = "$"+Total

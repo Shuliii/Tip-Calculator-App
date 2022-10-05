@@ -21,7 +21,7 @@
             <label for="bill">Bill</label>
             <input
               class="billamount"
-              type="text"
+              type="number"
               placeholder="0"
               id="bill"
               name="bill"
@@ -35,13 +35,16 @@
               <button class="button | fifteen">15%</button>
               <button class="button | twentyfive">25%</button>
               <button class="button | fifty">50%</button>
-              <input type="text" placeholder="Custom" class="tip" />
+              <input type="number" placeholder="Custom" class="tip" />
             </div>
           </div>
 
           <div class="people-place-holder">
-            <label>Number of People</label>
-            <input type="text" placeholder="0" class="people" />
+            <div class="label">
+              <label>Number of People</label>
+              <p class="error">Can't be zero</p>
+            </div>
+            <input type="number" placeholder="0" class="people" />
           </div>
         </div>
 
